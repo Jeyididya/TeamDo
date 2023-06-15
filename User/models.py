@@ -5,6 +5,7 @@ from django.db import models
 
 
 class User(AbstractUser):
+    # visibility = models.BooleanField(default=False)
 
     class Meta:
         swappable = 'AUTH_USER_MODEL'
